@@ -1,0 +1,50 @@
+.desc-text {
+  color: #c4c3c3;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-decoration: none;
+  
+}
+
+.desc-title {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-decoration: none;
+}
+
+.work-container {
+  background-color: #5e5e5e;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+
+.work-text {
+  color: #fff;
+}
+
+.company {
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+.time-worked {
+  color: #c9c7c7;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .desc-text {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
