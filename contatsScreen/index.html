@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="name">Vini Souza</a>
+
+      <ul class="list">
+        <li class=""><a href="../index.html">Start</a></li>
+        <li class=""><a href="../aboutScreen/index.html">About</a></li>
+        <li class=""><a href="../ProjectsScreen/index.html">Projects</a></li>
+        <li class="selected"><a href="./index.html">Contacts</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <h3 class="desc-title">Contact me!</h3>
+
+      <p class="desc-text">
+        Here are a couple of ways to get in touch with me—feel free to reach out
+        via my phone number or email.
+      </p>
+
+      <a class="links pLeft-25" href="mailto:vinischafer32@gmail.com">
+        vinischafer32@gmail.com
+      </a>
+      <a class="links pLeft" href="tel:+51995455269">
+        +51 995455269
+      </a>
+    </div>
+
+    <div class="email-inputs">
+      <form>
+        <label class="text" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name"/>
+        
+        <br />
+
+        <label class="text" for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com"/>
+        
+        <br />
+
+        <label class="text" for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="dd 99 0000000"/>
+        
+        <br />
+
+        <label class="text" for="about">About:</label>
+        <input type="text" id="about" name="about" placeholder="title of your email"/>
+        
+        <br />
+
+        <label class="text" for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="very cool thing for me to read"></textarea>
+
+        <a class="button" href="#" onclick="sendEmail()">Send E-mail</a>
+      </form>
+    </div>
+
+    <div class="footer" >
+      <a href="index.html" class="name-footer">Vini Souza</a>
+
+      <div class="footer-links">
+        <a class="links" target="_blank" href="https://github.com/ViniSouza32">
+          Github
+        </a>
+        <a class="links" target="_blank" href="https://twitter.com/vinisouza32">
+          Twitter | X
+        </a>
+        <a
+          class="links"
+          target="_blank"
+          href="https://linkedin.com/in/vinicius-schafer-07a474292"
+        >
+          Linkedin
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="../scripts/hamburgerMenu/scripts.js"></script>
+  <script>
+    function sendEmail() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let about = document.getElementById("about").value;
+      let message = document.getElementById("message").value;
+
+      let mailtoLink = "mailto:vinischafer32@gmail.com"
+        + "?subject=Contact%20Form"
+        + "&body=Name: " + name
+        + "%0AEmail: " + email
+        + "%0APhone: " + phone
+        + "%0AAbout: " + about
+        + "%0AMessage: " + message;
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+</html>
