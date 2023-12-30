@@ -1,4 +1,5 @@
 body {
+  background-image: url("./assets/imgs/galaxyBack.webp");
   background-color: #000;
   margin: 0;
   padding: 0;
@@ -41,7 +42,77 @@ body {
 
 .selected {
   background-color: #555;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around; 
+}
+
+.list li {
+  margin: 0;
   padding: 8px;
+  text-align: center; 
+}
+
+.mercury {
+  background: url(https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.mars {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.earth {
+  background: url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.jupiter {
+  background: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 355px 0;
+  }
 }
 
 .list {
@@ -170,7 +241,7 @@ body {
 }
 
 .menu-icon {
-  display: none; 
+  display: none;
   cursor: pointer;
   margin-right: 15px;
 }
@@ -182,7 +253,6 @@ body {
   margin: 6px 0;
   transition: 0.4s;
 }
-
 
 @media only screen and (max-width: 600px) {
   .list {
@@ -199,10 +269,10 @@ body {
   }
 
   .list {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; 
+    top: 60px;
     right: 0;
     background-color: #333;
     padding: 10px;
