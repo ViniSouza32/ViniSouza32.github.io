@@ -1,8 +1,7 @@
 body {
-  background-image: url("./assets/imgs/galaxyBack.webp");
+  background-image: url("./assets/imgs/galaxyBack1024x768.jpg");
   background-color: #000;
   background-size: cover;
-  background-position: center;
   margin: 0;
   padding: 0;
 }
