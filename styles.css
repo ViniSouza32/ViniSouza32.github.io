@@ -232,7 +232,11 @@ body {
 .links {
   color: #fff;
   text-decoration: none;
-  padding-left: 10%;
+  padding-left: 10px;
+}
+
+.container-links {
+  padding-left: 24%;
 }
 
 .menu-icon {
