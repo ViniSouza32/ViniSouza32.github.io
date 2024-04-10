@@ -1,0 +1,40 @@
+.desc-text {
+  color: #c4c3c3;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-decoration: none;
+}
+
+.desc-title{
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-decoration: none;
+}
+
+.remove-decoration {
+  text-decoration: none;
+}
+
+.image-projects {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .desc-text {
+  display: none;
+  }
+
+  .image-projects {
+    width: 75%;
+    padding-left: 10%;
+    padding-top: 12px;
+  }
+} 

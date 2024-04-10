@@ -7,6 +7,9 @@
 
     <link href="../styles.css" rel="stylesheet" />
     <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="componentes/cover.css"> 
+    <link rel="stylesheet" href="componentes/slider.css">
+
     <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.jpg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
@@ -55,79 +58,34 @@
     </div>
     <div class="box"></div>
 
-    <a href="https://github.com/ViniSouza32/crieFlix" target="_blank">
-      <img
-        class="image-projects"
-        src="../assets/imgs/crieFlix.png"
-        alt="project crieFlix created in crieTI"
-      />
-    </a>
-
-    <h3 class="desc-title">CrieFlix</h3>
-
-    <p class="desc-text">
-      At CRIE_TI, I built a project mimicking Netflix using only HTML and CSS.
-      This hands-on experience showcases my web development skills and
-      creativity in a real-world context.
-    </p>
-
-    <a href="https://github.com/ViniSouza32/jogoDaMemoria" target="_blank">
-      <img
-        class="image-projects"
-        src="../assets/imgs/jogoMemoria.png"
-        alt="memory game created in crieTI"
-      />
-    </a>
-
-    <h3 class="desc-title">Memory Game</h3>
-
-    <p class="desc-text">
-      At CRIE_TI, I created a Memory game project employing HTML, JavaScript,
-      and CSS. This hands-on endeavor offers a glimpse into my front-end
-      expertise, particularly with JavaScript.
-
-      <a
-        href="https://github.com/fernandoCesarFreitas/sistemaDeDoacoes"
-        target="_blank"
-      >
-        <img
-          class="image-projects-weird-one"
-          src="../assets/imgs/sistemaDoacoes.png"
-          alt="donation system created in a group"
-        />
-      </a>
-    </p>
-
-    <h3 class="desc-title">Donation System</h3>
-
-    <p class="desc-text">
-      At CRIE_TI, I gained valuable experience working collaboratively in a
-      group setting, as exemplified by a project I co-created with a friend.
-      This particular endeavor not only demonstrates our teamwork but also
-      showcases the full-stack capabilities mentioned earlier. Through effective
-      collaboration, underscoring my proficiency in both front-end and back-end
-      development.
-    </p>
-
-      <a
-        href="https://vinisouza32.github.io/mindSweeper/index.html"
-        target="_blank"
-      >
-        <img
-          class="image-projects"
-          src="../assets/imgs/mindSweeper.png"
-          alt="a game made of mineSweeper made by myself"
-        />
-      </a>
-    </p>
-
-    <h3 class="desc-title">MineSweeper</h3>
-
-    <p class="desc-text">
-      I've taken on a project purely for the joy it brings. A project made in the 
-      languages of html css and javascipt is active in the GitHub pages, just click on 
-      the image of the game that it'll bring you right to it!
-    </p>
+    <section class="slider">
+      <div class="slider__header">
+          <h4 class="slider__title">Projects</h4>
+            <a class="slider__more" href="seeMore.html">
+              <span>Ver todos</span>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.66536 11.9154L14.8212 11.9154L9.69703 17.0395L10.9987 18.332L18.332 10.9987L10.9987 3.66536L9.7062 4.95786L14.8212 10.082L3.66536 10.082L3.66536 11.9154Z" />
+              </svg>
+            </a>
+      </div>
+      <div class="slider__track">
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/crieFlix.png" alt="CrieFlix">
+            <span class="cover__title">CrieFlix</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/jogoMemoria.png" alt="Memory Game">
+            <span class="cover__title">Memory Game</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/mindSweeper.png" alt="MineSweeper">
+            <span class="cover__title">MineSweeper</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/sistemaDoacoes.png" alt="Donation System">
+            <span class="cover__title">Donation System</span>
+          </div>
+        </section>
 
     <div id="footer"></div>
   </body>
