@@ -1,0 +1,323 @@
+body {
+  background-image: url("./assets/imgs/galaxyBack1024x768.jpg");
+  background-color: #000;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid #a08282;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.padl {
+  padding-left: 45.1%;
+}
+
+.name {
+  text-decoration: none;
+  color: #e7b9b9;
+  border: 1px solid #a08282;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: default;
+}
+
+.selected {
+  background-color: #555;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around; 
+}
+
+.list li {
+  margin: 0;
+  padding: 8px;
+  text-align: center; 
+}
+
+.mercury {
+  background: url(https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.mars {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.earth {
+  background: url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+.jupiter {
+  background: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  animation: movimiento 10s linear 0s infinite;
+  cursor: pointer;
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 355px 0;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-left: 20px;
+  padding: 8px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.list li:hover {
+  background-color: #807d7d;
+}
+
+.sub-text {
+  color: #c7c7c77a;
+}
+
+.text-link {
+  color: #a8aafd;
+  text-decoration: none;
+  padding-left: 25%;
+}
+
+.name-body {
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 1%;
+  justify-content: center;
+}
+
+.image {
+  padding-left: 35%;
+  max-height: 555px;
+  max-width: 1000px;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-decoration: none;
+}
+
+.email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e5e5e;
+  border: 2px solid #a08282;
+  border-radius: 8px;
+  padding: 2px 4px;
+}
+
+.box {
+  --size: 50px;
+  --b: 10px;
+  --p: 25px;
+  --R: calc(55.9px + var(--b) / 2);
+
+  --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+  -webkit-mask: radial-gradient(
+        var(--R) at left 50% bottom calc(-1 * var(--p)),
+        var(--_g)
+      )
+      calc(50% - 2 * var(--size)) calc(50% - var(--size) / 2 - var(--b) / 2) /
+      calc(4 * var(--size)) calc(var(--size) + var(--b)) repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(-1 * var(--p)), var(--_g)) 50%
+      calc(50% + var(--size) / 2 + var(--b) / 2) / calc(4 * var(--size))
+      calc(var(--size) + var(--b)) repeat-x;
+  background: linear-gradient(90deg, red, blue);
+  height: 200px;
+}
+
+.container-projects {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: #0000004f;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 12px;
+}
+
+.conteiner-text {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.footer {
+  display: flex;
+  align-content: center ;
+  border-top: 1px solid #a08282;
+  color: #fff;
+}
+
+.text_footer {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 34%;
+  text-decoration: none;
+}
+
+.link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.container-links {
+  padding-left: 24%;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .container-links {
+    display: flex;
+    padding-left: 5%;
+  }
+
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .list li {
+    margin: 5px 0;
+  }
+
+  .name-body,
+  .image,
+  .text,
+  .container-projects,
+  .footer-links {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .padl {
+    padding-left: 5%;
+  }
+
+  .image {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .container-projects {
+    width: 90%;
+  }
+
+  .list.show {
+    display: flex;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .desc-text {
+    display: nonw;
+  }
+
+  .list li {
+    margin: 10px 0;
+  }
+}

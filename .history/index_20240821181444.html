@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícius portifolio</title>
+
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.jpg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="name">Vini Souza</a>
+
+      <ul class="list">
+        <a href="index.html" style="padding-left: 10px">
+          <li class="mercury planet">Start</li>
+        </a>
+        <a
+          href="./aboutScreen/index.html"
+          style="font-size: 10px; padding-left: 10px"
+        >
+          <li class="mars planet">About</li>
+        </a>
+        <a
+          href="./ProjectsScreen/index.html"
+          style="font-size: 10px; padding-left: 10px"
+        >
+          <li class="earth planet">Projects</li>
+        </a>
+        <a
+          href="./contatsScreen/index.html"
+          style="font-size: 10px; padding-left: 10px"
+        >
+          <li class="jupiter planet">Contacts</li>
+        </a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <div class="body">
+      <h3 class="name-body" style="padding-right: 27%">
+        Vinícius Schafer, Software Engineer
+      </h3>
+
+      <h4 class="sub-text padl">About me</h4>
+
+      <p class="text">
+        Hey there! I work as a software developer, in both backend and frontend coding. 
+        At the moment I'm 19 years old. Have finished school. I recently completed a development course called CRIE_TI at Univates, 
+        a university in Brazil. While I'm not currently working I did gain some experience working as an assistant at Minuano Alimentos. 
+        I was part of a program named "Jovem Aprendiz" that allows young individuals to get hands on experience, 
+        in settings and learn about the duties of an administrative assistant.
+      </p>
+
+      <div class="container-links">
+        <a class="links" target="_blank" href="https://github.com/ViniSouza32">
+          Github
+        </a>
+        <a class="links" target="_blank" href="https://twitter.com/vinisouza32">
+          Twitter | X
+        </a>
+        <a
+          class="links"
+          target="_blank"
+          href="https://linkedin.com/in/vinicius-schafer-07a474292"
+        >
+          Linkedin
+        </a>
+        <a class="links email" href="mailto:vinischafer32@gmail.com">
+          Entre em contato
+        </a>
+      </div>
+      <div class="box"></div>
+    </div>
+
+    <h4 class="text">Last Projects</h4>
+
+    <div class="container-projects">
+      <h2 class="text">Project 1 - Donation system</h2>
+      <a
+        class="text-link"
+        href="https://github.com/fernandoCesarFreitas/sistemaDeDoacoes"
+        target="_blank"
+      >
+        > Project on Github <
+      </a>
+      <p class="conteiner-text">
+        This project aims to simplify the donation process for those affected by
+        the floods in "Vale do Taquari" in 2023. It was created as a means to
+        assist people who have lost their belongings.
+      </p>
+    </div>
+
+    <div class="container-projects">
+      <h2 class="text">Project 2 - Events management</h2>
+
+      <a
+        class="text-link"
+        href="https://github.com/Bernardo-R321/gerenciamentoEventos"
+        target="_blank"
+      >
+        > Project on Github <
+      </a>
+      <p class="conteiner-text">
+        This project is for simplifying registration and data collection. Even thought is not finished,
+        it can be of great utility. The web-site uses a virtual machine to store all the information related
+        to users and events i a PostgreSQL database.
+      </p>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+  <script src="scripts/hamburgerMenu.js"></script>
+  <script src="scripts/footerGen.js"></script>
+</html>
