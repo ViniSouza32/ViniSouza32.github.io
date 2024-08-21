@@ -167,7 +167,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #5e5e5e;
+  background-color: #0000006b;
   border: 2px solid #a08282;
   border-radius: 8px;
   padding: 2px 4px;
@@ -196,7 +196,7 @@ body {
 .container-projects {
   border: 1px solid #fff;
   border-radius: 8px;
-  background-color: #5e5e5e;
+  background-color: #0000004f;
   width: 50%;
   margin-left: 25%;
   margin-bottom: 12px;
