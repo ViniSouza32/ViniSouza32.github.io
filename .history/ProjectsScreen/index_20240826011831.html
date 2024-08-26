@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="componentes/cover.css"> 
+    <link rel="stylesheet" href="componentes/slider.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="name">Vini Souza</a>
+
+      <ul class="list">
+        <a href="../index.html" style="font-size: 10px;  padding-left: 7px">
+          <li class="mercury planet">Start</li>
+        </a>
+        <a href="../aboutScreen/index.html" style="font-size: 10px; padding-left: 10px">
+          <li class="mars planet">About</li>
+        </a>
+        <a
+          href="./index.html"
+          style="padding-left: 8px"
+        >
+          <li class="earth planet">Projects</li>
+        </a>
+        <a
+          href="../contatsScreen/index.html"
+          style="font-size: 10px; padding-left: 6px"
+        >
+          <li class="jupiter planet">Contacts</li>
+        </a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+    </div>
+
+    <div class="desc">
+      <h3 class="desc-title">Projects!</h3>
+
+      <p class="desc-text">
+        On this page you'll see some codes that i have decided to show, 
+        there are more in my Github Profile; These programs 
+      </p>
+    </div>
+    <div class="box"></div>
+
+    <section class="slider">
+      <div class="slider__header">
+          <h4 class="slider__title">Projects</h4>
+            <a class="slider__more" href="seeMore.html">
+              <span>Ver todos</span>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.66536 11.9154L14.8212 11.9154L9.69703 17.0395L10.9987 18.332L18.332 10.9987L10.9987 3.66536L9.7062 4.95786L14.8212 10.082L3.66536 10.082L3.66536 11.9154Z" />
+              </svg>
+            </a>
+      </div>
+      <div class="slider__track">
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/crieFlix.png" alt="CrieFlix">
+            <span class="cover__title">CrieFlix</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/jogoMemoria.png" alt="Memory Game">
+            <span class="cover__title">Memory Game</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/mindSweeper.png" alt="MineSweeper">
+            <span class="cover__title">MineSweeper</span>
+          </div>
+          <div class="cover cover--large">
+            <img class="cover__image" src="../assets/imgs/sistemaDoacoes.png" alt="Donation System">
+            <span class="cover__title">Donation System</span>
+          </div>
+        </section>
+
+    <div id="footer"></div>
+  </body>
+  <script src="../scripts/hamburgerMenu.js"></script>
+  <script src="../scripts/footerGen.js"></script>
+</html>
