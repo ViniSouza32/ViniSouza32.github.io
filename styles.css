@@ -49,7 +49,7 @@ body {
 }
 
 .mercury {
-  background: url(https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg);
+  background: url('./assets/imgs/planets/mercury.jpg');
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #000;
@@ -61,7 +61,7 @@ body {
 }
 
 .mars {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg);
+  background: url('./assets/imgs/planets/mars.jpg');
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #000;
@@ -73,7 +73,7 @@ body {
 }
 
 .earth {
-  background: url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+  background: url('./assets/imgs/planets/earth.jpg');
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #000;
@@ -85,7 +85,7 @@ body {
 }
 
 .jupiter {
-  background: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg);
+  background: url('./assets/imgs/planets/jupiter.jpg');
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #000;
